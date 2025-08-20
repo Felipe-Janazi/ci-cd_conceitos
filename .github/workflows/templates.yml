@@ -1,6 +1,16 @@
+# Nome que aparece na interface do Github
 name: GitHub Actions Demo
+
+# Nome que aparece quando acessamos a pipeline, nesse caso pegando o nome de quem a rodou
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+
+# Obrigatório, definimos quais gatilhos ativam a pipeline
 on: [push]
+
+# Criação de variáveis para que possamos as utilizar durante os jobs
+env: test = teste
+
+# Execução da pipeline, tudo que ela vai fazer, podendo ter mais de um job
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest

@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Comentario
         run: |
-          echo "Comentário PUSH WORKFLOW - Branch Ignore"
+          echo "Comentário Paths Workflow - Paths"

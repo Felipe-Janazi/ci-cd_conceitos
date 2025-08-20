@@ -1,0 +1,15 @@
+
+name: Github sactions - Push Template Basic
+run-name: Running - ${{ github.event_name }}
+on: 
+  push: 
+    path: 
+      - '**.txt'
+
+jobs: 
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "Comentário PUSH WORKFLOW - Branch Ignore"

@@ -1,4 +1,4 @@
-name: Github sactions - Push Template Basic
+name: Github sactions - Push Template Junção
 run-name: Running - ${{ github.event_name }}
 on: 
   push: 
@@ -14,4 +14,4 @@ jobs:
     steps:
       - name: Comentario
         run: |
-          echo "Comentário Paths Workflow - Paths teste"
+          echo "Comentário Paths Workflow - Junção push"

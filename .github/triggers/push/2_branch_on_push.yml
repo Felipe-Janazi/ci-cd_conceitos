@@ -1,5 +1,5 @@
 
-name: Github sactions - Push Template Basic
+name: Github sactions - Push Template Branches
 run-name: Running - ${{ github.event_name }}
 on: 
   push: 

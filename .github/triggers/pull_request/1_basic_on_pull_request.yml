@@ -1,4 +1,4 @@
-name: Github sactions - Push Template Basic
+name: Github sactions - Pull request
 run-name: Running - ${{ github.event_name }}
 on: [pull_request]
 
@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: Comentario
         run: |
-          echo "Comentário Paths Workflow - Paths teste"
+          echo "Comentário Pull request - Pull"

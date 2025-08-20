@@ -1,0 +1,18 @@
+name: Github sactions - Pull Request Types
+run-name: Running - ${{ github.event_name }}
+on: 
+  pull_request:
+    types: 
+      - opened
+      - reopened
+      - closed
+      
+      
+
+jobs: 
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "Comentário Pull request - Types"

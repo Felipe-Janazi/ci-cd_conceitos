@@ -1,0 +1,16 @@
+name: Github sactions - Workflow dispatch String
+run-name: Running - ${{ github.event_name }}
+on: 
+  workflow_dispatch:
+    inputs: 
+      browser: 
+        description: Selecione o browser
+        type: string
+
+jobs: 
+  on-workflow_dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "Comentário Workflow dispatch - ${{ inputs.browser }}

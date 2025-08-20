@@ -1,8 +1,8 @@
-name: Github sactions - Workflow dispatch
+name: Github sactions - Workflow dispatch Choice
 run-name: Running - ${{ github.event_name }}
 on: 
   workflow_dispatch:
-    # 
+    # Ao executar manualmente teremos mais um dropdown list para selecionar os options que colocarmos
     inputs: 
       tags: 
         description: Selecione a tag

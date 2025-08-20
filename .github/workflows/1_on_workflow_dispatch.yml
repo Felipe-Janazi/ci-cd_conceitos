@@ -1,4 +1,4 @@
-name: Github sactions - Pull Request Types
+name: Github sactions - Workflow dispatch
 run-name: Running - ${{ github.event_name }}
 on: [workflow_dispatch]
 

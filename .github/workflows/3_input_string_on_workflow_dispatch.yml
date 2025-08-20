@@ -1,4 +1,4 @@
-name: Github sactions - Workflow dispatch String
+name: Github sactions - Workflow dispatch
 run-name: Running - ${{ github.event_name }}
 on: 
   workflow_dispatch:
@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Comentario
         run: |
-          echo "Comentário Workflow dispatch - ${{ inputs.browser }}
+          echo "Comentário Workflow dispatch - ${{ inputs.browser }}"

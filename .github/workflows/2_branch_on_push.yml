@@ -3,7 +3,7 @@ run-name: Running - ${{ github.event_name }}
 on: 
   push: 
     branches: 
-      - develop
+      - main
 
 jobs: 
   on-push:

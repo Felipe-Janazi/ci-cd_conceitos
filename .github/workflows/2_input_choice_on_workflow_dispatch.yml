@@ -1,0 +1,25 @@
+name: Github sactions - Workflow dispatch
+run-name: Running - ${{ github.event_name }}
+on: 
+  workflow_dispatch:
+    # 
+    inputs: 
+      tags: 
+        description: Selecione a tag
+        # Escolhas para o usuário
+        type: choice
+        options: 
+          - tag_1
+          - tag_2
+          - tag_3
+        default: 'tag_1'
+        required: true
+
+jobs: 
+  on-workflow_dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "Comentário Workflow dispatch - ${{ inputs.tags }}"
+        # Dessa forma conseguimos printar a escolha do nosso usuário, que vem da inputs e depois tags

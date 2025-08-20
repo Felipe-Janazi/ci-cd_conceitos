@@ -1,11 +1,9 @@
-
 name: Github sactions - Push Template Basic
 run-name: Running - ${{ github.event_name }}
 on: 
   push: 
-    branches-ignore: 
-      - main
-      # Dessa forma podemos ignorar especificamente alguma branch
+    paths: 
+      - '**.txt'
 
 jobs: 
   on-push:
@@ -13,4 +11,4 @@ jobs:
     steps:
       - name: Comentario
         run: |
-          echo "Comentário PUSH WORKFLOW - Branch Ignore"
+          echo "Comentário Paths Workflow - Paths"

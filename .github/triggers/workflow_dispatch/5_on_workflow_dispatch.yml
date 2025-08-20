@@ -1,0 +1,30 @@
+name: Github sactions - Workflow dispatch
+run-name: Running - ${{ github.event_name }}
+on: 
+  workflow_dispatch:
+    inputs: 
+      # Podemos juntar todos os tipos e assim fazer algo mais completo de acordo com a necessidade
+      tags: 
+        description: Selecione a tag
+        # Escolhas para o usuário
+        type: choice
+        options: 
+          - tag_1
+          - tag_2
+          - tag_3
+        default: 'tag_1'
+        required: true
+      browser:
+        description: Selecione um browser
+        type: string
+      severidade: 
+        description: Funcionalidade crítica?
+        type: boolean
+
+jobs: 
+  on-workflow_dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "Comentário Workflow dispatch - Boolean: ${{ inputs.severidade }}"

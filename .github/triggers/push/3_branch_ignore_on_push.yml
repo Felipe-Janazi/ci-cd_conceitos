@@ -3,7 +3,7 @@ name: Github sactions - Push Template Basic
 run-name: Running - ${{ github.event_name }}
 on: 
   push: 
-    path: 
+    paths: 
       - '**.txt'
 
 jobs: 

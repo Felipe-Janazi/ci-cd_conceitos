@@ -11,10 +11,7 @@ on:
     branches:
       - main 
     paths: 
-      - '**.txt'
-  
-      
-      
+      - '**.txt'      
 
 jobs: 
   on-push:

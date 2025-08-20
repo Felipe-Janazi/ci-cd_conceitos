@@ -1,0 +1,17 @@
+name: Github sactions - Push Template Basic
+run-name: Running - ${{ github.event_name }}
+on: 
+  push: 
+    branches: 
+      - main
+    paths:
+      # Somente vai rodar quando estiver na branch main E alguma alteração em um arquivo txt
+      - '**.txt'
+
+jobs: 
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "Comentário Paths Workflow - Paths teste"

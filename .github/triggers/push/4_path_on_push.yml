@@ -3,6 +3,7 @@ run-name: Running - ${{ github.event_name }}
 on: 
   push: 
     paths: 
+      # Realiza o push somente quando algum arquivo .txt seja alterado
       - '**.txt'
 
 jobs: 

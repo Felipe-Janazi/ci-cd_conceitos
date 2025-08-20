@@ -3,9 +3,9 @@ run-name: Running - ${{ github.event_name }}
 on: 
   workflow_dispatch:
     inputs: 
-      browser: 
-        description: Selecione o browser
-        type: string
+      severidade: 
+        description: Funcionalidade crítica?
+        type: boolean
 
 jobs: 
   on-workflow_dispatch:
@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Comentario
         run: |
-          echo "Comentário Workflow dispatch - ${{ inputs.browser }}"
+          echo "Comentário Workflow dispatch - Boolean: ${{ inputs.severidade }}"

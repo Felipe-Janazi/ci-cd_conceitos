@@ -1,5 +1,5 @@
-name: Github sactions - Workflow run Basic Template
-run-name: Running - Workflow run Basic Template
+name: Github sactions - Workflow run Triggado
+run-name: Running - Workflow run Triggado
 on: 
   workflow_run:
     # Escrevemos o NOME do workflow para que ele possa ser triggado

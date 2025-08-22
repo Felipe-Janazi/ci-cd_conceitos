@@ -4,7 +4,7 @@ on: [push, workflow_dispatch]
 
 jobs:
   test_unit:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Comentário
         run: |
@@ -12,7 +12,7 @@ jobs:
 
   test_api:
     # needs: test_unit
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Comentário
         run: |
@@ -20,7 +20,7 @@ jobs:
   
   test_ui:
     needs: [test_unit, test_api]
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Comentário
         run: |

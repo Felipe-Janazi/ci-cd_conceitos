@@ -36,5 +36,4 @@ O objetivo é servir como um guia de aprendizado e referência para implementar
   <li><b>Estratégias de matriz</b> (<code>matrix</code>) para múltiplas versões e ambientes</li>
   <li><b>Condicionais</b> (<code>if</code>) para controlar a execução de jobs e steps</li>
   <li><b>Retry e continue-on-error</b> para gerenciamento de falhas</li>
-  <li><b>Notificações e feedbacks</b> no fluxo de execução</li>
 </ul>

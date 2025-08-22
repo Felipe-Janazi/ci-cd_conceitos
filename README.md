@@ -1,36 +1,29 @@
-🚀 <h1> CI/CD com GitHub Actions </h1>
+<h1>🚀 CI/CD com GitHub Actions</h1>
 
-Este repositório contém exemplos práticos de pipelines CI/CD utilizando GitHub Actions, abordando desde conceitos básicos até variações mais avançadas, como triggers personalizados, secrets, variables, workflows com dependências, matriz de builds, condicionais e gerenciamento de erros.
+<p>
+Este repositório contém exemplos práticos de <b>pipelines CI/CD utilizando GitHub Actions</b>, 
+abordando desde conceitos básicos até variações mais avançadas, como 
+<b>triggers personalizados, secrets, variables, workflows com dependências, matriz de builds, condicionais e gerenciamento de erros</b>.
+</p>
 
-O objetivo é servir como um guia de aprendizado e referência para implementar integração contínua (CI) e entrega contínua (CD) em projetos de diferentes contextos.
+<p>
+O objetivo é servir como um guia de aprendizado e referência para implementar 
+<b>integração contínua (CI)</b> e <b>entrega contínua (CD)</b> em projetos de diferentes contextos.
+</p>
 
-📌 Conteúdo do Repositório
-🔹 Triggers
+<hr/>
 
-Execução por push e pull_request
+<h2>📌 Conteúdo do Repositório</h2>
 
-Agendamento com cron
+<h3>🔹 Triggers</h3>
+<ul>
+  <li>Execução por <b>push</b> e <b>pull_request</b></li>
+  <li><b>Agendamento</b> com <code>cron</code></li>
+  <li>Execução <b>manual</b> com <code>workflow_dispatch</code></li>
+  <li><b>Triggers condicionais</b> baseados em branches, paths e tags</li>
+</ul>
 
-Execução manual com workflow_dispatch
-
-Triggers condicionais baseados em branches, paths e tags
-
-🔹 Secrets & Variables
-
-Uso de GitHub Secrets para armazenar credenciais sensíveis
-
-Definição de variáveis de ambiente no workflow
-
-Boas práticas de segurança no gerenciamento de informações
-
-🔹 Workflows Avançados
-
-Dependências entre jobs (needs)
-
-Estratégias de matriz (matrix) para múltiplas versões e ambientes
-
-Condicionais (if) para controlar a execução de jobs e steps
-
-Retry e continue-on-error para gerenciamento de falhas
-
-Notificações e feedbacks no fluxo de execução
+<h3>🔹 Secrets & Variables</h3>
+<ul>
+  <li>Uso de <b>GitHub Secrets</b> para armazenar credenciais sensíveis</li>
+  <li>Definição de <b>variáveis de

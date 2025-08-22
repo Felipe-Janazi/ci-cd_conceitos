@@ -4,7 +4,7 @@ on:
   workflow_run:
     workflows: [Github Actions - Trigger 1]
     # Especificando a branch que será executada
-    branches: [dev]
+    branches: [main]
 
 jobs: 
   on-push:

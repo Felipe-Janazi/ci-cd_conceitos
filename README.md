@@ -1,4 +1,4 @@
-🚀 CI/CD com GitHub Actions
+🚀 <h1> CI/CD com GitHub Actions </h1>
 
 Este repositório contém exemplos práticos de pipelines CI/CD utilizando GitHub Actions, abordando desde conceitos básicos até variações mais avançadas, como triggers personalizados, secrets, variables, workflows com dependências, matriz de builds, condicionais e gerenciamento de erros.
 

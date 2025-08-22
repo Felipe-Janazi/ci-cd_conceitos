@@ -5,14 +5,14 @@ on: [push, workflow_dispatch]
 jobs:
   matrix_job:
     runs-on: ubuntu-latest
-    strategy:
+    strategy: 
       matrix:
+        # 
         navegador: [chrome, firefox, webkit]
-        tag: [tag_1, tag_2, tag_3]
-        framework: [robot, cypress, selenium]
+      # Se falhar algum teste ele para a execução da matrix, por default como true
       fail-fast: false
     steps:
       - name: Comentário
         run: |
           echo ${{ matrix.navegador }}
-          echo ${{ matrix.tag }}
+          

@@ -26,4 +26,15 @@ O objetivo é servir como um guia de aprendizado e referência para implementar
 <h3>🔹 Secrets & Variables</h3>
 <ul>
   <li>Uso de <b>GitHub Secrets</b> para armazenar credenciais sensíveis</li>
-  <li>Definição de <b>variáveis de
+  <li>Definição de <b>variáveis de ambiente</b> no workflow</li>
+  <li>Boas práticas de <b>segurança no gerenciamento de informações</b></li>
+</ul>
+
+<h3>🔹 Workflows Avançados</h3>
+<ul>
+  <li><b>Dependências entre jobs</b> (<code>needs</code>)</li>
+  <li><b>Estratégias de matriz</b> (<code>matrix</code>) para múltiplas versões e ambientes</li>
+  <li><b>Condicionais</b> (<code>if</code>) para controlar a execução de jobs e steps</li>
+  <li><b>Retry e continue-on-error</b> para gerenciamento de falhas</li>
+  <li><b>Notificações e feedbacks</b> no fluxo de execução</li>
+</ul>

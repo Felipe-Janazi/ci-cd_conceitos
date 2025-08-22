@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Comentario
         run: |
-          echo "Workflow que foi Triggado"
+          echo "Workflow que foi Triggado!"

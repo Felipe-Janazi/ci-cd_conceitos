@@ -5,8 +5,8 @@ on:
     # Escrevemos o NOME do workflow para que ele possa ser triggado
     workflows: [Github Actions - Trigger 1]
     # types: [completed]
-    # types: [requested]
-    types: [in_progress]
+    types: [requested]
+    # types: [in_progress]
 
 jobs: 
   on-push:

@@ -4,6 +4,7 @@ on: [push, workflow_dispatch]
 
 jobs:
   on-push-only:
+    # Dessa forma sendo executado esse job somente se for push
     if: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-latest
     steps:

@@ -11,7 +11,8 @@ jobs:
           echo "Execução Setup"
 
   test_api:
-    # needs: test_unit
+    # Desta forma só chegará aqui se o passo anterior funcionar, se não funcionar tudo será cortado e finalizado
+    needs: test_unit
     runs-on: ubuntu-latest
     steps:
       - name: Comentário
@@ -20,6 +21,7 @@ jobs:
   
   test_ui:
     needs: [test_unit, test_api]
+    # needs: test_api
     runs-on: ubuntu-latest
     steps:
       - name: Comentário

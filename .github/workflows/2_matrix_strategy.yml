@@ -12,6 +12,7 @@ jobs:
         # Supondo que sejam 3 tipos diferentes como test de create, update e delete
         # Todas as tags seram executada em cada um dos três parâmetros de navegador
         tag: [tag_1, tag_2, tag_3]
+        framework: [robot, cypress, selenium]
       # Se falhar algum teste ele para a execução da matrix, por default como true
       fail-fast: false
     steps:

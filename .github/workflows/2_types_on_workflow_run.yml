@@ -1,0 +1,17 @@
+name: Github sactions - Workflow run Triggado
+run-name: Running - Workflow run Triggado
+on: 
+  workflow_run:
+    # Escrevemos o NOME do workflow para que ele possa ser triggado
+    workflows: [Github Actions - Trigger 1]
+    types: [completed]
+    # types: [requested]
+    # types: [in_progress]
+
+jobs: 
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "Workflow que foi Triggado!"

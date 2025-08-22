@@ -11,6 +11,7 @@ jobs:
         run: |
           echo Comentário antes do erro
           exit 1
+        # Forçando um erro no github actions
       - name: Comentário
         run: |
           echo Comentário após o erro
@@ -23,10 +24,11 @@ jobs:
           echo Comentário antes do erro
           exit 1
       - name: Comentário
+      # Dessa forma sempre será executado o comando de baixo
         if: always()
         run: |
           echo Comentário após o erro
-
+          
   job_3_continue_on_error:
     runs-on: ubuntu-latest
     steps:
@@ -35,7 +37,7 @@ jobs:
           echo Comentário antes do erro
           exit 1
         continue-on-error: true
-
+        # Desta forma se tiver um erro ele vai simplesmente ignorar
       - name: Comentário
         run: |
           echo Comentário após o erro

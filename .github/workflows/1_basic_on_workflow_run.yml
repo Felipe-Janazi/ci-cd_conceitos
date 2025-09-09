@@ -1,0 +1,12 @@
+name: Github Actions - Trigger 1
+run-name: Running - Workflow run 
+on: 
+  push: 
+
+jobs: 
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "Primeiro workflow"

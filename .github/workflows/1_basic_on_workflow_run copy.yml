@@ -1,4 +1,4 @@
-name: Github sactions - Workflow run Triggado
+name: Github Actions - Workflow run Triggado
 run-name: Running - Workflow run Triggado
 on: 
   workflow_run:
